@@ -51,7 +51,7 @@ def parse_page(json):
 
 if __name__ == '__main__':
     since_id = 0
-    db = pymysql.connect(host='127.0.0.1',user='root',passwd='mysql',port = 3306,db='spiders')
+    db = pymysql.connect(host='127.0.0.1',user='root',passwd='mysql',port = 3306,db='spider')
     cur = db.cursor()
     for page in range(1,11):
         json = get_page(since_id)
